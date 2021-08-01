@@ -2,6 +2,7 @@
 Useful tools for text processing and mining
 ######
 sources: 
+#
 https://www.tensorflow.org/tutorials
 Chollet François. Deep Learning with Python. Manning Publications Co., 2018.
 “Text Classification with an RNN  :   TensorFlow Core.” TensorFlow, www.tensorflow.org/tutorials/text/text_classification_rnn.
