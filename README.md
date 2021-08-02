@@ -1,5 +1,15 @@
 # Text_Processing
 Useful tools for text processing and mining
+
+
+
+#
+"1_Encoding_Basic_Cocept": very basic codes to get an idea about how encoding works
+"2_RNN": A recurrent NN (Tensorflow) that gets the movie review and defines the negativity or positivity 
+
+
+
+
 ######
 sources: 
 #

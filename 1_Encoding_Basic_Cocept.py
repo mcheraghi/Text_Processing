@@ -45,7 +45,7 @@ print("word list",vocab)
 
 
 
-#------------------------------------------------------------------------------------Integer encoding:considering the orders
+#------------------------------------------------------------------------------------Integer encoding: considering the orders
 
 
 def one_hot_encoding(text):

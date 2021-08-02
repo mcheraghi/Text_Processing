@@ -7,7 +7,7 @@ import numpy as np
 
 
 
-#Source:  https://www.tensorflow.org/tutorials/text/text_classification_rnn, the text data are movie reviews
+#Source:  https://www.tensorflow.org/tutorials/text/text_classification_rnn
 
 
 
@@ -19,7 +19,3 @@ MAXLEN = 250
 BATCH_SIZE = 64
 
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words = VOCAB_SIZE)
-
-print(train_data[1])
-
-
