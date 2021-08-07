@@ -69,3 +69,37 @@ text = "this is a test to see if this test will work is is test a a"
 encoding = one_hot_encoding(text)
 print(encoding)
 print(vocab)
+
+
+
+#--------------------------------------------------------------------------------Converting the text into number and vice versa based on a set
+path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
+print("the fie is saved at {}",format(path_to_file))
+# Read, then decode for py2 compat.
+text = open(path_to_file, 'rb').read().decode(encoding='utf-8')
+vocab = sorted(set(text))
+# Creating a mapping from unique characters to indices
+char2idx = {u:i for i, u in enumerate(vocab)}
+idx2char = np.array(vocab)
+
+def text_to_int(text):
+  return np.array([char2idx[c] for c in text])
+
+text_as_int = text_to_int(text)
+
+
+# lets look at how part of our text is encoded
+print("Text:", text[:13])
+print("Encoded:", text_to_int(text[:13]))
+
+def int_to_text(ints):
+  try:
+    ints = ints.numpy()
+  except:
+    pass
+  return ''.join(idx2char[ints])
+
+print(int_to_text(text_as_int[:13]))
+
+
+
